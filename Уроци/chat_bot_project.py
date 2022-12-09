@@ -99,6 +99,9 @@ while issue != "EXIT".lower():
     issue = input("Please specify your issue by choosing - 1-hardware or 2-software or EXIT to quit: ").lower()
 
 if not issue == "EXIT".lower():
+    print(f"Good bye, {name}")
+
+else:
     print(f"Purchasable items: {count_salable}")
     print(f"Changeable items: {count_changeable}")
     overall_items = count_salable + count_changeable
@@ -112,5 +115,3 @@ if not issue == "EXIT".lower():
             print(word)
         else:
             print(f"{word} appeared: {count} times")
-else:
-    print(f"Good bye, {name}")
